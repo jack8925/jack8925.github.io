@@ -1,0 +1,86 @@
+<NotepadPlus>
+    <InternalCommands />
+    <Macros>
+        <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
+            <Action type="2" message="0" wParam="42024" lParam="0" sParam="" />
+            <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
+        </Macro>
+        <Macro name="&#x8766;&#x76AE;*" Ctrl="yes" Alt="yes" Shift="no" Key="49">
+            <Action type="0" message="2451" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2309" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2326" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2177" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2453" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="0" message="2180" wParam="0" lParam="0" sParam="" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&lt;" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="l" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="i" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&gt;" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&lt;" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="a" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam=" " />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="h" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="r" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="e" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="f" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="=" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam='&quot;' />
+            <Action type="0" message="2179" wParam="0" lParam="0" sParam="" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam='&quot;' />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&gt;" />
+            <Action type="0" message="2451" wParam="0" lParam="0" sParam="" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&lt;" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="/" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="a" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&gt;" />
+            <Action type="0" message="2300" wParam="0" lParam="0" sParam="" />
+        </Macro>
+    </Macros>
+    <UserDefinedCommands>
+        <Command name="Get PHP help" Ctrl="no" Alt="yes" Shift="no" Key="112">https://www.php.net/$(CURRENT_WORD)</Command>
+        <Command name="Wikipedia Search" Ctrl="no" Alt="yes" Shift="no" Key="114">https://en.wikipedia.org/wiki/Special:Search?search=$(CURRENT_WORD)</Command>
+        <Command name="Open file in another instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_FULL_FILE_PATH) $(CURRENT_WORD) -nosession -multiInst</Command>
+    </UserDefinedCommands>
+    <PluginCommands />
+    <ScintillaKeys />
+</NotepadPlus>
