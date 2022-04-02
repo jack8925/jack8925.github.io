@@ -1,7 +1,7 @@
 	
 function currentTime(){
 	
-	var $now = new Date,
+	let $now = new Date,
 	    $nowY = $now.getFullYear(),
 	    $nowM = $now.getMonth(),
 	    $nowD = $now.getDate(),
@@ -28,11 +28,11 @@ function currentTime(){
 	}
 	
 	
-	var	$time = "現在時間 " + $nowY+ "年 " + $nowM + "月 "+ $nowD + "日 "+ "星期" + $nowW +"  " + $nowH + ":" + $nowI + ":" + $nowS;
+	let $time = "現在時間 " + $nowY+ "年 " + $nowM + "月 "+ $nowD + "日 "+ "星期" + $nowW +"  " + $nowH + ":" + $nowI + ":" + $nowS;
 		
 	
 	document.getElementById("timearea").innerHTML=$time;
-	setInterval(currentTime, 1000);
+	setTimeout(currentTime, 1000);
 	
 	
 	
