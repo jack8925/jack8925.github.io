@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://i.imgur.com/WF3ki0Ms.jpg" type="image/jpeg">
+    <title>日期計算工具</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container {
+            width: 45%;
+            text-align: center;
+        }
+        .separator {
+            width: 2px;
+            background-color: black;
+            height: auto;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="number"] {
+            width: 132px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>日期差計算器</h2>
+        <label for="date1">日期一：</label>
+        <input type="date" id="date1">
+        <br>
+        <label for="date2">日期二：</label>
+        <input type="date" id="date2">
+        <br>
+        <button onclick="calculateDifference()">計算天數差</button>
+        <h3 id="result"></h3>
+    </div>
+    
+    <div class="separator"></div>
+    
+    <div class="container">
+        <h2>天數算日期計算器</h2>
+        <label for="baseDate">日期：</label>
+        <input type="date" id="baseDate">
+        <br>
+        <label for="daysToAdd">天數：</label>
+        <input type="number" id="daysToAdd">
+        <br>
+        <button onclick="calculateNewDate()">計算新日期</button>
+        <h3 id="newDateResult"></h3>
+    </div>
+
+    <script>
+        function setDefaultDates() {
+            let today = new Date().toISOString().split('T')[0];
+            document.getElementById("date1").value = today;
+            document.getElementById("date2").value = today;
+            document.getElementById("baseDate").value = today;
+        }
+        
+        function calculateDifference() {
+            let date1 = new Date(document.getElementById("date1").value);
+            let date2 = new Date(document.getElementById("date2").value);
+            
+            if (!date1 || !date2) {
+                document.getElementById("result").innerText = "請選擇兩個有效的日期。";
+                return;
+            }
+            
+            let timeDiff = date2 - date1;
+            let dayDiff = Math.ceil(Math.abs(timeDiff) / (1000 * 60 * 60 * 24));
+            
+            if (timeDiff < 0) {
+                document.getElementById("result").innerText = `前 ${dayDiff} 天。`;
+            } else {
+                document.getElementById("result").innerText = `共 ${dayDiff + 1} 天。`;
+            }
+        }
+        
+        function calculateNewDate() {
+            let baseDate = new Date(document.getElementById("baseDate").value);
+            let daysToAdd = parseInt(document.getElementById("daysToAdd").value, 10);
+            
+            if (isNaN(daysToAdd)) {
+                document.getElementById("newDateResult").innerText = "請輸入有效的天數。";
+                return;
+            }
+            
+            let newDate = new Date(baseDate);
+            newDate.setDate(newDate.getDate() + daysToAdd);
+            
+            let formattedDate = newDate.toISOString().split('T')[0];
+            document.getElementById("newDateResult").innerText = `新日期：${formattedDate}`;
+        }
+        
+        window.onload = setDefaultDates;
+    </script>
+</body>
+</html>
