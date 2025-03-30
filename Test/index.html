@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>雙層選單框架</title>
-    <link rel="shortcut icon" href="https://i.imgur.com/WF3ki0Ms.jpg">
-    <link rel="stylesheet" href="css/index.css">
-    
-    <!-- ✅ 加入 Google Analytics -->
-    <script src="script/GoogleAnalytics.js"></script>
-    
-    <!-- ✅ 加入主要腳本 -->
-    <script src="script/index.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>雙層選單框架</title>
+	
+	<!-- 網站圖示 (Favicon) -->
+	<link rel="shortcut icon" href="https://i.imgur.com/WF3ki0Ms.jpg" type="image/jpeg">
+	
+	<!-- 連結 CSS -->
+	<link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li>主選單 1
-                    <ul>
-                        <li><a href="#" onclick="changeIframe('https://www.youtube.com/')">YouTube</a></li>
-                    </ul>
-                </li>
-                <li>小工具
-                    <ul>
-                        <li><a href="#" onclick="changeIframe('web/Tool/算日子.html')">算日子</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <main class="content">
-            <iframe id="contentFrame" src="" frameborder="0"></iframe>
-        </main>
-    </div>
+	<div class="container">
+		<!-- 左側選單 -->
+		<nav class="sidebar">
+			<ul>
+				<li class="menu-item">
+					<a href="#" class="menu-title">選單 1</a>
+					<ul class="submenu">
+						<li><a href="#" onclick="changeIframe('https://www.youtube.com/')">子選單 1-1</a></li>
+						<li><a href="#" onclick="changeIframe('about:blank')">子選單 1-2</a></li>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<a href="#" class="menu-title">小工具</a>
+					<ul class="submenu">
+						<li><a href="#" onclick="changeIframe('web/Tool/算日子.html')">算日子</a></li>
+						<li><a href="#" onclick="changeIframe('about:blank')">子選單 2-2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- 右側內容區域 (iframe) -->
+		<main class="content">
+			<iframe id="content-frame" src="about:blank"></iframe>
+		</main>
+	</div>
+
+	<!-- 連結 JavaScript -->
+	<script src="script/GoogleAnalytics.js"></script>
+	<script src="script/index.js"></script>
+
 </body>
 </html>
